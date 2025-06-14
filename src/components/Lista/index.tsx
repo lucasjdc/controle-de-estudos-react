@@ -1,4 +1,4 @@
-import './style.scss';
+import sytle from "./Lista.module.scss";
 
 function Lista() {
     const tarefas = [{
@@ -12,11 +12,11 @@ function Lista() {
         tempo: "03:00:00"
     }]
     return (
-        <aside className="listaTarefas">
+        <aside className={sytle.listaTarefas}>
             <h2>Estudos do dia</h2>
                 <ul>
                     {tarefas.map((item, index) => (
-                        <li key={index} className="item">
+                        <li key={index} className={sytle.item}>
                             <h3>{item.tarefa}</h3>
                             <span>{item.tempo}</span>
                         </li>
