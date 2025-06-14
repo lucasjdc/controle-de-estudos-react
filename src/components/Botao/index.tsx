@@ -1,11 +1,13 @@
 import React from "react";
 import style from "./Botao.module.scss";
 
-class Botao extends React.Component {
+// O tipo das props é definido usando TypeScript: { children: React.ReactNode }
+class Botao extends React.Component <{children: React.ReactNode}> {
+    // O método render é obrigatorio em componentes de classe
     render() {
         return (
             <button className={style.botao}>
-                Botão
+                {this.props.children}
             </button>
         )
     }
