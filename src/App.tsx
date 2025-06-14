@@ -1,4 +1,5 @@
 import Formulario from "./components/Formulario";
+import Lista from "./components/Lista";
 
 function App() {
   
@@ -7,11 +8,10 @@ function App() {
     <>
       <div className="App">
         <Formulario/>
-        
+        <Lista/>     
         
     
-      </div>
-      
+      </div>      
     </>
   )
 }
